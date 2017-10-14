@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Arza - Zapatos artesanales de baile</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b3044e9721.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="arza-logo.svg">
+        </div>
+    </header>
+
+    <header class="navbarTwo">
+        <div class="container">
+            <div class="logocorto">
+                <img src="logo-negro.png">
+            </div>
+            <button class="navbar-btn wantShoes">Quiero un par</button>
+        </div>
+    </header>
+
+
+
+    <section class="content">
+
+        <div class="portada">
+
+            <div class="siteTitle">
+
+                <img src="texto-header.svg">
+
+            </div>
+
+            <button class="portada-btn wantShoes">Quiero un par</button>
+        </div>
+
+
+        <div class="problem-sol">
+            <div class="problem toppos">
+
+                <div class="howWorks">¿Cómo se baila con Arza?</div>
+
+            </div>
+
+            <div class="sol">
+                <div class="right">
+                    <div><img id="paso1" src="comolohacemos-1.png">Medimos tu pie en Sarmiento 1882</div>
+                </div>
+
+
+            </div>
+
+            <div class="sol">
+                <div class="right">
+                    <div><img id="paso2" src="comolohacemos-2.svg">Diseñamos el zapato que necesitás. Nos adaptamos a tus pies y objetivos</div>
+                </div>
+
+
+            </div>
+
+            <div class="sol2">
+                <div class="right">
+                    <div><img id="paso3" src="comolohacemos-3.png"> Voilá y Bailá! :)</div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="arguments">
+            <div class="container ">
+                <div class="row">
+                    <div class="fabrica module">
+                        <div id="fabrica">Los zapatos de fábrica se hacen pensando en pies genéricos.
+                            </br>
+                            </br>No los tuyos.</div>
+                    </div>
+
+                    <img class="pain module" src="highpain.jpg">
+                </div>
+
+                <div class="row">
+                    <img class="hand module" src="fototu.png">
+                    <div class="paravos module">
+                        <div id="paravos">Arza se hace para vos.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="muestra">
+            <div class="container">
+                <ul class="bxslider">
+                    <li>
+                        <div class="shoemuestra"><img src="SHOE-1-icon.png">
+                            <div>
+                                <h2>Tu pie</h2>
+                                <p>El baile es movimiento. El zapato tiene que impulsarlo, no entorpecerlo. Arza se adapta a la forma y movimientos de tus pies</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shoemuestra"><img src="Stephanie-Air-Quilt-Sling-D35150_C.png&wid=70&hei=70&wid=1262&hei=1262&fmt=png-alpha&qlt=90,0&resMode=sharp&op_usm=0.5,0.3,0,0.png">
+                            <div>
+                                <h2>Tu experiencia</h2>
+                                <p>Principiante o profesional. Práctica o presentación. Asfalto o madera. Arza se adapta a ti</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shoemuestra"><img src="mujeres.jpg">
+                            <div>
+                                <h2>Tu diseño</h2>
+                                <p>Trabajamos con un amplio rango de materiales y diseños. Forma y fondo</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="container">
+                <h1 class="Bailarines">"Una extensión de tus pies"</h1>
+                <div class="testimonios">
+                    <div class="bailarin">
+                        <p><span class="big">"</span>No te fallan. No se te salen los dedos, no se rompe el taco, no maltrata. Arza me entiende.</p>
+                        <h5>- Gloria, bailarina de tango.</h5></div>
+
+                    <div class="bailarin">
+                        <p><span class="big">"</span>Son como medias che. No los cambio por nada.</p>
+                        <h5>- Roger, bailarín de salsa.</h5></div>
+
+                    <div class="bailarin">
+                        <p><span class="big">"</span>Arza es como una continuación de tus pies. Cuando bailás no los sentís.</p>
+                        <h5>- Lara, bailarina de tango.</h5></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mapa">
+
+          <div id="map"></div>
+  <script>
+    function initMap() {
+      var uluru = {lat: -34.605755, lng: -58.393628};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+      var infoWindows = new google.maps.InfoWindow({content:'<strong>Arza</strong><br>Sarmiento 1882<br>'});
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Pyt89ROLnHWmhJFuwbk3snfd_zztu6Q&callback=initMap">
+  </script>
+
+            <h2>Hagamos tus zapatos</h2>
+            <div class="direccion">
+                Sarmiento 1882, Buenos Aires, Argentina</div> <br>
+            <div class="contact">
+                <a class="facebook" href="https://www.facebook.com/Arza.Zapatos/?fref=ts"><img src="facebook.png"></a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <div>&#9400; Arza Zapatos Artesanales</div>
+                <div class="lagranja">Hecho con ♥ por <a href="http://www.lagranja.co">lagranja.co</a> </div>
+            </div>
+            <div class="both">
+                <div class="mail">hola@arza.com.ar</div>
+                <p> +54 11 156 641 2721</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="talktous">
+        <i class="fa fa-times" id="close" aria-hidden="true"></i>
+
+        <div class="letstalk">
+            <h2>Queremos saber de vos</h2>
+            <span>Escribinos a:</span>
+            <div class="email">hola@arza.com.ar</div>
+            <span>O al teléfono</span>
+            <div class="tlf">+54-911-3245675</div>
+            <a class="facebook" href="https://www.facebook.com/Arza.Zapatos/?fref=ts"><img src="facebook.png"></a>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+
+
+
+</body>
+
+</html>
